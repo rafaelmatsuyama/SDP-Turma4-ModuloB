@@ -1,0 +1,18 @@
+CREATE TABLE carrinho (
+  id INTEGER PRIMARY KEY,
+  nome_produto VARCHAR(255) NOT NULL,
+  quantidade INTEGER NOT NULL,
+  preco numeric(7, 2) NOT NULL
+);
+
+INSERT INTO carrinho VALUES (1, 'PS 5', 2, 4999.00);
+INSERT INTO carrinho VALUES (2, 'Camisa do PSG', 5, 399.90);
+INSERT INTO carrinho VALUES (3, 'Apple MacBook Pro', 1, 17000.00);
+INSERT INTO carrinho VALUES (4, 'Macallan 12', 10, 25000.00);
+INSERT INTO carrinho VALUES (5, 'RTX 4190', 2, 18000.00);
+
+UPDATE carrinho SET preco = 4500.00 WHERE nome_produto = 'RTX 4190';
+
+DELETE FROM carrinho WHERE preco > 5000.00;
+
+SELECT * FROM carrinho;
