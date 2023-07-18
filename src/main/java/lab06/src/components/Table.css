@@ -1,0 +1,43 @@
+h1 {
+    color: green;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+th, td {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+    background-color: coral;
+}
+
+
+/* CSS NOVO */
+table, p { 
+    width: 90%;
+    margin: 0 auto;
+}
+
+th {
+    color: #3b79ff;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #f0f8ff;
+}

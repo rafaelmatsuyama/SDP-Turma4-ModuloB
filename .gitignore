@@ -1,6 +1,7 @@
 *.iml
 .idea/
 target/
+node_modules/
 
 # Compiled class file
 *.class
