@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Maricá Edutech Turma 3!</title>
+  <style>
+			h4 {
+				color: green;
+			}
+			table {
+				border-collapse: collapse;
+				text-align: center;
+				width: 100%;
+			}
+			td, th {
+				border-bottom: 1px solid #ddd;
+			}
+			th {
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			tr:hover {
+				background-color: coral;
+			}
+		</style>
+</head>
+<body>
+<h4>Olá Mundo da <b>Turma 3</b> - Edutech!</h4>
+<table>
+  <tr>
+    <th>Código</th>
+    <th>Nome Produto</th>
+    <th>Quantidade</th>
+    <th>Preço</th>
+  </tr>
+  <tr th:each="produto: ${lista}">
+    <td th:text="${produto.id}" />
+    <td th:text="${produto.nome_produto}" />
+    <td th:text="${produto.quantidade}" />
+    <td th:text="${produto.preco}" />
+  </tr>
+</table>
+</body>
+</html>
